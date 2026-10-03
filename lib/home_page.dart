@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("Beranda")));
+    return Scaffold(
+      appBar: AppBar(title: const Text('Halaman Kedua')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            // Kembali ke halaman sebelumnya
+            Navigator.pop(context);
+          },
+          child: const Text('Kembali ke Halaman Utama'),
+        ),
+      ),
+    );
   }
 }
