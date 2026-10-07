@@ -169,6 +169,81 @@ class MenuPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
+              // baris 3
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(
+                          Icons.flash_on,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Listrik", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(Icons.tv, size: 40, color: Colors.white),
+                      ),
+                      SizedBox(height: 5),
+                      Text("TV Kabel", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(Icons.movie, size: 40, color: Colors.white),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Streaming", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Belanja Onlie", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
