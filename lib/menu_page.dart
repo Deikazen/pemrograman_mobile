@@ -89,6 +89,85 @@ class MenuPage extends StatelessWidget {
                   ),
                 ],
               ),
+              // baris ke 2
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(
+                          Icons.smartphone,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Pulsa & Data", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(
+                          Icons.gamepad,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Voucher Game", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(
+                          Icons.local_taxi,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Transportasi", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 65,
+                        height: 65,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Icon(Icons.water, size: 40, color: Colors.white),
+                      ),
+                      SizedBox(height: 5),
+                      Text("Tagihan Air", style: TextStyle(fontSize: 14)),
+                    ],
+                  ),
+                ],
+              ),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
