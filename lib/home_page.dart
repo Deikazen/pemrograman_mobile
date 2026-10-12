@@ -1,5 +1,6 @@
 import 'package:coba1/menu_page.dart';
 import 'package:flutter/material.dart';
+import 'package:coba1/profile_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -71,6 +72,16 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text("ke menu page"),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
+              },
+              child: const Text("ke profile page"),
             ),
           ],
         ),
