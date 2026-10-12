@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
-
-import 'menu_page.dart';
-
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
@@ -12,19 +8,38 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilPage extends State<ProfilePage> {
-  int currentIndex = 0;
-
-  final List<Widget> pages = const [
-    HomePage(),
-    MenuPage(),
-    Center(child: Text("Detail Page")),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("NavigationBar")),
-      body: pages[currentIndex],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              alignment: Alignment.center,
+              child: const Icon(Icons.person, size: 100, color: Colors.blue),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.only(right: 300),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text("Nama", style: TextStyle(fontSize: 15)),
+                  Text("Satria Radja Anugerah", style: TextStyle(fontSize: 18)),
+                  SizedBox(height: 10),
+                  Text("NIM", style: TextStyle(fontSize: 15)),
+                  Text("152024160", style: TextStyle(fontSize: 18)),
+                  SizedBox(height: 10),
+
+                  Text("Program Studi", style: TextStyle(fontSize: 15)),
+                  Text("Informatika", style: TextStyle(fontSize: 18)),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
