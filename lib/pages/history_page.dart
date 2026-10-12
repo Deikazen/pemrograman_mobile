@@ -6,8 +6,20 @@ class HistoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("History Page")),
-      body: const Center(child: Text("Ini adalah Halaman History")),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              alignment: Alignment.center,
+              child: const Icon(Icons.history, size: 100, color: Colors.blue),
+            ),
+            Text("Halaman History", style: TextStyle(fontSize: 20)),
+            Text("E-Money", style: TextStyle(fontSize: 20)),
+            SizedBox(height: 20),
+          ],
+        ),
+      ),
     );
   }
 }
