@@ -25,19 +25,6 @@ class _ProfilPage extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(title: const Text("NavigationBar")),
       body: pages[currentIndex],
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: currentIndex,
-        onDestinationSelected: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-          NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
-          NavigationDestination(icon: Icon(Icons.details), label: "Detail"),
-        ],
-      ),
     );
   }
 }
