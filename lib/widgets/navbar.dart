@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class Navbar extends StatelessWidget {
   final int selectedIndex;
-  final valueChanged<int> onTap;
+  final ValueChanged<int> onTap;
   const Navbar({super.key, required this.selectedIndex, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigatorBar(
+    return BottomNavigationBar(
       currentIndex: selectedIndex,
       onTap: onTap,
       selectedItemColor: Colors.blue,
