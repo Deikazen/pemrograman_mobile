@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
 // Import semua file halaman tujuan
-import 'pages/topUp_page.dart';
-import 'pages/transfer_page.dart';
-import 'pages/scan_page.dart';
-import 'pages/bayar_page.dart';
-import 'pages/pulsa_data_page.dart';
-import 'pages/voucher_game_page.dart';
-import 'pages/transportasi_page.dart';
-import 'pages/tagihan_air_page.dart';
+import 'topUp_page.dart';
+import 'transfer_page.dart';
+import 'scan_page.dart';
+import 'bayar_page.dart';
+import 'pulsa_data_page.dart';
+import 'voucher_game_page.dart';
+import 'transportasi_page.dart';
+import 'tagihan_air_page.dart';
 import 'listrik_page.dart';
-import 'pages/tv_kabel_page.dart';
-import 'pages/streaming_page.dart';
-import 'pages/belanja_online_page.dart';
-import 'pages/donasi_page.dart';
-import 'pages/asuransi_page.dart';
-import 'pages/investasi_page.dart';
-import 'pages/lainnya_page.dart';
+import 'tv_kabel_page.dart';
+import 'streaming_page.dart';
+import 'belanja_online_page.dart';
+import 'donasi_page.dart';
+import 'asuransi_page.dart';
+import 'investasi_page.dart';
+import 'lainnya_page.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
