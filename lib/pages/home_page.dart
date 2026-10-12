@@ -10,56 +10,16 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.all(20),
-              margin: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              // child: Row dipindahkan ke dalam Container
-              child: Row(
-                children: [
-                  const Icon(Icons.add_circle, size: 40, color: Colors.blue),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text("Tambah Buku", style: TextStyle(fontSize: 24)),
-                        Text("Tambahkan Buku"),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+              alignment: Alignment.center,
+              child: const Icon(Icons.home, size: 100, color: Colors.blue),
             ),
-            Container(
-              padding: const EdgeInsets.all(20),
-              margin: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              // child: Row dipindahkan ke dalam Container
-              child: Row(
-                children: [
-                  const Icon(Icons.book, size: 40, color: Colors.blue),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text("Tambah Buku", style: TextStyle(fontSize: 24)),
-                        Text("Tambahkan Buku"),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            Text("Halaman Beranda", style: TextStyle(fontSize: 20)),
+            Text("E-Money", style: TextStyle(fontSize: 20)),
             SizedBox(height: 20),
+
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
