@@ -1,6 +1,6 @@
-import 'package:coba1/menu_page.dart';
+import 'package:coba1/pages/menu_page.dart';
 import 'package:flutter/material.dart';
-import 'package:coba1/profile_page.dart';
+import 'package:coba1/pages/profile_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
